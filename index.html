@@ -12,49 +12,22 @@
         <div class="glass">
             <h2 class="title">CORONAVIRUS INDONESIA LIVE DATA</h2>
 
-            <div class="card-container">
-                <div class="card">
-                    <div class="card-title">
-                        <h3>KONFIRMASI POSITIF</h3>
-                    </div>
-                    <div class="card-content">
-                        100 ORANG
-                    </div>
-                    <div class="card-image">
-                        
-                    </div>
-                </div>
-    
-                <div class="card">
-                    <div class="card-content">
-    
-                    </div>
-                </div>
-    
-                <div class="card">
-                    <div class="card-content">
-    
-                    </div>
-                </div>
-    
-                <div class="card">
-                    <div class="card-content">
-    
-                    </div>
-                </div>
-            </div>
+            <div class="card-container" id="card-container"></div>
 
-            <p class="update">Update terakhir</p>
+            <p class="update" id="update"></p>
             
         </div>
-
-        
-
-        
     </main>
 
     <div class="square1"></div>
     <div class="square2"></div>
     
+    <script src="api.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            getData();
+        });
+    </script>
 </body>
 </html>
