@@ -120,8 +120,6 @@ main {
     position: absolute;
     z-index: 1;
     border-radius: 10px;
-
-    
 }
 
 .square1 {
@@ -138,4 +136,21 @@ main {
     background: linear-gradient(to right top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5));   
     border-left: 1px solid rgba(255, 255, 255, 0.2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+}
+
+@media (max-width: 568px) {
+    main {
+        padding: 1.5rem;
+        height: 170vh;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+
+    .glass {
+        width: 25rem;
+        height: 62rem;
+        margin-top: 2rem;
+    }
 }
